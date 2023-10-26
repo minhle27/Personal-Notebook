@@ -1,0 +1,18 @@
+/**
+ * Description: Some variants of MST problems
+ */
+
+Minimum Spanning Subgraph of MST problem. Some edges in the given graph have already been 
+fixed and must be taken as part of the solution. For Kruskal's algorithm, we first take 
+into account all the fixed edges and their costs. Then, we continue running Kruskal's 
+algorithm on the remaining free edges until we have a spanning subgraph (or spanning tree). 
+For Prim's algorithm, we give higher priorities to these fixed edges so that we will always 
+take them and their costs.
+
+
+Second-Best Spanning Tree of MST problem, We can see that the second best ST is actually the
+MST with just two edges difference. One edge is taken out from the MST and another chord edge 
+is added into the MST. Next, for each edge in the MST (there are at most V-1 edges in the MST), 
+temporarily flag it so that it cannot be chosen, then try to find the MST again in O(E) but now 
+excluding that flagged edge. Note that we do not have to re-sort the edges at this point. The 
+best spanning tree found after this process is the second best ST. 

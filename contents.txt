@@ -1,0 +1,28 @@
+# Any line followed by a '#' character is ignored
+# Section headings must be in square brackets
+# Subsections within a section should follow the format:
+#   [filename within code directory][tab character \t][subsection title][tab character \t][subfolder name]
+
+[Contest]
+template.cc	Template	contest
+bashrc.txt	.Bashrc	contest
+troubleshoot.txt	Troubleshoot	contest
+technical.txt	Technical Note	contest
+
+[Data Structures]
+dsu.cc	DSU	data structure
+fenwick.cc	Fenwick Tree	data structure
+lazysegtree.cc	Lazy Segment Tree	data structure
+trie.cc	Trie	data structure
+sparsetable.cc	Sparse Table	data structure
+smalltolarge.cc	Small To Large Merging	data structure
+
+[Graph]
+dijkstra.cc	Dijkstra	graph
+bellmanford-ml.cc	BellmanFord	graph
+floydwarshall.cc	Floyd Warshall	graph
+bfs.cc	BFS	graph
+bfs01.cc	BFS 0-1	graph
+kruskal.cc	Kruskal	graph
+prim.cc	Prim	graph
+variants.txt	MST variants	graph

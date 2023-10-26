@@ -1,0 +1,23 @@
+Submission : 
+All program source code files and/or test data files which you create must be located in or
+beneath your home directory. Your home directory will normally be named /home/team
+but this may vary between sites so check with your site coordinator. You may create
+subdirectories beneath your home directory.
+
+If your program exits with a non-zero exit code, it will be judged as a Run Time Error.
+-----------
+Compiling :
+1. For C++:
+compileg++ progname.cpp (compiling)
+To execute a C/C++ program after compiling it as above, type the command : ./a.out
+
+2. For Java:
+compilejava Progname.java
+runjava Progname
+
+3. For python3
+compilepython3 progname.py
+runpython3 progname.py
+----------
+IDE: They can be accessed using the Applications Programming menu.
+Other editors: They can be accessed using the Applications Accessories menu.

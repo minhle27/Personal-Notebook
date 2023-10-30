@@ -26,3 +26,69 @@ bfs01.cc	BFS 0-1	graph
 kruskal.cc	Kruskal	graph
 prim.cc	Prim	graph
 variants.txt	MST variants	graph
+floodfill.cc	Flood Fill	graph
+bipartiteness.cc	Bipartiteness Check	graph
+shortestCycle.cc	Shortest Cycle	graph
+kahn.cc	Kahn Algorithm for TopoSort	graph
+dfsTopo.cc	TopoSort using DFS	graph
+dpDag.cc	DP on DAG	graph
+cycleCheck.cc	Cycle Check	graph
+
+[Tree Algorithm]
+general.cc	General about tree problems	tree
+treeDiameter.cc	Tree Diameter	tree
+lca.cc	Finding LCA	tree
+eulertour.cc	Euler Tour 	tree
+binlift.cc	Binary Lifting	tree
+
+[Geometry]
+point.cc	Point Struct	geometry
+line.cc	Line Struct	geometry
+vector.cc	Vector Struct	geometry
+complex.cc	Complex number	geometry
+circle.cc	Circle	geometry
+Quadrilaterals.cc	Quadrilaterals	geometry
+triangle.cc	Triangle	geometry
+polygon.cc	Polygon	geometry
+convexhull.cc	Convex hull	geometry
+
+[Bitwise]
+operation.cc	Bit Manipulation	bitwise
+optimization.cc	Optimization using Bit	bitwise
+trick.cc	Other trick	bitwise
+
+[STL]
+vector.cc	Vector	STL
+unorderedset.cc	Unordered Set	STL
+tuple.cc	Tuple	STL
+string.cc	String	STL
+stack.cc	Stack	STL
+set.cc	Set	STL
+queue.cc	Queue	STL
+pq.cc	Heap (Prority Queue)	STL
+orderStatistic.cc	Order Statistic Tree	STL
+multiset.cc	Multiset	STL
+map.cc	Map	STL
+deque.cc	Deque	STL
+customComp.cc	Custom Comparators	STL
+
+[Number Theory]
+modint.cc	ModInt template	math
+modinverse.cc	Modular Inverse	math
+modpow.cc	Modular exponentiation	math
+prime.cc	Prime	math
+gcdlcm.cc	GCD, LCM	math
+eulerphi.cc	Euler's Totient Function	math
+
+[Combinatorics]
+bc.cc	Binomial Coefficients	combinatorics
+
+[Other]
+cc.cc	Coordinate Compression	other
+backtracking.cc	Backtracking	other
+
+[Dynamic Programming]
+coinexchange.cc	Coin Exchange	dp
+editdistance.cc	Edit Distance	dp
+knapsack.cc	Knapsack	dp
+lis.cc	LIS	dp

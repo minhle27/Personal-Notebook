@@ -74,5 +74,25 @@ struct SegTree {
     long long get(int u, int v) { return get(1, 1, n, u, v); }
 };
 
-vll A(n + 1, 0);
-SegTree st(A, n);
+int main()
+{
+    cin >> n >> m;
+    vll A(n + 1, 0);
+    SegTree st(A, n);
+
+    while (m--) {
+        int t; cin >> t;
+        if (t == 0) {
+            int u, v, val;
+            cin >> u >> v >> val;
+            st.update(u, v, val);
+        }
+        else {
+            int x, y;
+            cin >> x >> y;
+            cout << st.get(x, y) << endl;
+        }
+    }
+    
+    return 0;
+}

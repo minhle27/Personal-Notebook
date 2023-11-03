@@ -92,3 +92,6 @@ coinexchange.cc	Coin Exchange	dp
 editdistance.cc	Edit Distance	dp
 knapsack.cc	Knapsack	dp
 lis.cc	LIS	dp
+
+[Divide and Conquer]
+binsearch.cc	Binary Search	dandq

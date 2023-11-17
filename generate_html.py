@@ -15,6 +15,7 @@ def add_toc(html, sections):
                 html2 += "<H2>" + section_name + "</H2>\n\n"
                 html2 += "<OL START=" + str(cnt) + ">\n"
                 for (_, subsection_name) in subsections:
+                    subsection_name = subsection_name.split('\t')[0]
                     html2 += "<LI><A HREF=\"#file" + str(cnt) + "\">" + subsection_name + "</A></LI>\n"
                     cnt += 1
                 html2 += "</OL>\n"

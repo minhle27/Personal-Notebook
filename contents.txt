@@ -16,6 +16,7 @@ lazysegtree.cc	Lazy Segment Tree	data structure
 trie.cc	Trie	data structure
 sparsetable.cc	Sparse Table	data structure
 smalltolarge.cc	Small To Large Merging	data structure
+slidingwindow.cc	Sliding Window	data structure
 
 [Graph]
 dijkstra.cc	Dijkstra	graph

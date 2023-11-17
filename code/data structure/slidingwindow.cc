@@ -21,3 +21,18 @@ vector<int> maxSlidingWindow(vector<int> &nums, int k) {
 	ret.push_back(*s.rbegin());
 	return ret;
 }
+
+// In general, it is not required for the subarray to have constant size as long as
+// both the left and right endpoints of the subarray only move to the right. 
+// Find the longest contiguous subarray such that every element in the subarray is unique
+// At each step, left pointer move to the right one step and right pointer move also to
+// the right until it finds a duplicate. The current positions of left and right pointer
+// indicate the longest subarray start at left
+int n;
+set<int> s;
+
+for (int i = 0; i < n; i++) {
+	while (r < n - 1 && !s.count(a[r + 1])) s.insert(a[++r]);
+	ckmax(ans, r - i + 1);
+	s.erase(a[i]);
+}

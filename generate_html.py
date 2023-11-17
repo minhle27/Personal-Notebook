@@ -1,7 +1,7 @@
 #!/usr/bin/python
 import subprocess
 code_dir = "code"
-title = "Stanford ACM-ICPC Team Notebook"
+title = "Minh Le's DSA notebook"
 
 def add_toc(html, sections):
     html2 = ''
@@ -51,7 +51,7 @@ def get_html_enscript(sections):
     enscript_options = ["enscript", "-E", "--color", "--language=html", "-o", "-", "-t", title]
     filenames = []
     for (_, subsections) in sections:
-        filenames += [code_dir + '/' + filename for (filename, _) in subsections]
+        filenames += [code_dir + '/' + foldername.split('\t')[1] + '/' + filename for (filename, foldername) in subsections]
     bstr = subprocess.check_output(enscript_options + filenames)
     return bstr.decode('utf-8')
 

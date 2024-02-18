@@ -1,10 +1,10 @@
 /**
- * Description: A map is a set of entries, each consisting of a key and a value. 
- * In a map, all keys are required to be unique, but values can be repeated. 
+ * Description: A map is a set of entries, each consisting of a key and a value.
+ * In a map, all keys are required to be unique, but values can be repeated.
  * Maps have three primary methods: add, retrive, remove.
  * In sorted maps, the pairs are sorted in order of key.
  * Insertions, deletions, and searches are all O(logN)
- * In unordered maps, the pairs aren't kept in sorted order 
+ * In unordered maps, the pairs aren't kept in sorted order
  * and all insertions, deletions, and searches are all O(1)
  */
 
@@ -28,7 +28,7 @@ for (auto &x : m) {
 
 // Note: it is generally a bad idea to insert or remove elements of a map while iterating over it.
 // One way to get around this is to just create a new map instead of removing from the old one.
-// Another is to maintain a list of all the keys you want to erase and erase them after 
+// Another is to maintain a list of all the keys you want to erase and erase them after
 // the iteration finishes
 
 map<int, int> m;
@@ -41,5 +41,11 @@ m.erase(11);   // [(3, 5); (10, 491)]
 if (m.upper_bound(10) == m.end()) {
 	cout << "end" << endl;  // Prints end
 }
+
+// find entry with max value
+auto it = std::max_element(m.begin(), m.end(), [](const auto &x, const auto &y) {
+    return x.second < y.second;
+});
+
 
 // Note: unordered_map is about three times faster than map, an array is almost a hundred times faster.

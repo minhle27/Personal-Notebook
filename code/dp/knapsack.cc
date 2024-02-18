@@ -35,3 +35,15 @@ int knapsack_unbounded(
     return *max_element(f.begin(), f.end());
 }
 // }}}
+
+// Top down implementation, choose items from left to right
+int dp(int g, int b) { // b is the current budget, g is current garment
+    if (b < 0) return -inf;
+    if (g == C) return M - b; // finished choosing, return money spent
+    int &ans = memo[g][b];
+    if (ans != -1) return ans;
+    for (int k = 1; k <= price[g][0]; k++) { // try each model k
+        ans = max(ans, dp(g + 1, b - price[g][k]));
+    }
+    return ans;
+}

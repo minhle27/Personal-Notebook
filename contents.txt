@@ -52,6 +52,7 @@ Quadrilaterals.cc	Quadrilaterals	geometry
 triangle.cc	Triangle	geometry
 polygon.cc	Polygon	geometry
 convexhull.cc	Convex hull	geometry
+rectangleGeo.cc	Rectangle Geometry	geometry
 
 [Bitwise]
 operation.cc	Bit Manipulation	bitwise
@@ -59,6 +60,9 @@ optimization.cc	Optimization using Bit	bitwise
 trick.cc	Other trick	bitwise
 
 [STL]
+note.cc	Note	STL
+pair.cc	Pair	STL
+permutation.cc	Permutation	STL
 vector.cc	Vector	STL
 unorderedset.cc	Unordered Set	STL
 tuple.cc	Tuple	STL
@@ -72,6 +76,8 @@ multiset.cc	Multiset	STL
 map.cc	Map	STL
 deque.cc	Deque	STL
 customComp.cc	Custom Comparators	STL
+tuple.cc	Tuple	STL
+array.cc	Array	STL
 
 [Number Theory]
 modint.cc	ModInt template	math
@@ -87,6 +93,9 @@ bc.cc	Binomial Coefficients	combinatorics
 [Other]
 cc.cc	Coordinate Compression	other
 backtracking.cc	Backtracking	other
+1Dpref.cc	1D PrefixSums	prefsum
+2Dpref.cc	2D PrefixSums	prefsum
+diff.cc	Difference Array	prefsum
 
 [Dynamic Programming]
 coinexchange.cc	Coin Exchange	dp

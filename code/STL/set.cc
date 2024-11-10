@@ -30,3 +30,8 @@ if (it == s.end()) {
 }
 
 // Real Runtime: Set > unordered_set > normal sorting
+
+// insert method return a pair of iterator and a boolean value
+// if the element is already present in the set, the boolean value is false
+// and the iterator points to the element that is already present
+// otherwise, the boolean value is true and the iterator points to the newly inserted element

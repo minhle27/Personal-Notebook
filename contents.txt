@@ -17,6 +17,7 @@ trie.cc	Trie	data structure
 sparsetable.cc	Sparse Table	data structure
 smalltolarge.cc	Small To Large Merging	data structure
 slidingwindow.cc	Sliding Window	data structure
+min_queue.cc	Minimum Queue	data structure
 
 [Graph]
 dijkstra.cc	Dijkstra	graph
